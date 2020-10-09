@@ -1,5 +1,6 @@
 <template>
-    <div id='footer'>
+    <div id='footer' class="footer">
+        Classrom App 2020. CFT TWK
     </div>
 </template>
 

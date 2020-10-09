@@ -1,21 +1,16 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <Login></Login>
+      <router-view></router-view> <!-- Carga el componente segun la url a la que se ingrese -->
     <Footer></Footer>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Login from './components/Login.vue'
 import Footer from './components/Footer.vue'
-
+//Comentario dentro de js, se comenta de diferentes maneras en html, js y css
 export default {
   name: 'App',
   components: {
-    Header,
-    Login,
     Footer
   }
 }
@@ -28,7 +23,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
-@import './assets/css/styles.css';
+@import './assets/css/styles.css';  /* importamos la hoja de estilos creada */
 </style>

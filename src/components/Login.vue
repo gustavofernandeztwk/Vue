@@ -1,15 +1,16 @@
 <template>
   <div id="login">
-    <h1>Login</h1>
+    <h1>Mi App</h1>
 
-    <form action="/action_page.php" method="post" class="login-form">
+    <img alt="Vue logo" class="logo" src="../assets/logo.png">
+    <form action="/Home" method="GET" class="login-form">
       <div class="container">
 
         <label for="uname"><b>Usuario</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required>
 
         <label for="psw"><b>Contraseña</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="text" placeholder="Enter Password" name="psw" required>
             
         <button type="submit">Ingresar</button>
 

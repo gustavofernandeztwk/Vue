@@ -7,11 +7,11 @@
       <div class="container">
 
         <label for="uname"><b>Usuario</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="text" :placeholder="username" name="uname" required>
 
         <label for="psw"><b>Contraseña</b></label>
-        <input type="text" placeholder="Enter Password" name="psw" required>
-            
+        <input type="text" :placeholder="pass" name="psw" required>
+        
         <button type="submit">Ingresar</button>
 
       </div>
@@ -25,8 +25,8 @@ export default {
   name: 'Login',
   data() {  //Este método contiene la información que se quiere mostrar
       return {
-          username: 'Ingrese su nombre de usuario',
-
+          username: 'Ingrese su usuario',
+          pass: 'Ingrese su contraseña'
       }
   }
 }

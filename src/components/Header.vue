@@ -2,14 +2,13 @@
     <div id='header' class="header">
         <div class="topnav">
             <div>
-                <a class="active" href="/home">Home</a>
+                <router-link to="/home">Home</router-link>  <!-- router-link evita recargar la página -->
             </div>
             <div>
-                <a href="#news">Pestaña</a>
+                <router-link :to="{name: 'widget', params: {id: 'Test'}}">Pestaña</router-link> <!-- envío de parámetro por url -->
                 <a href="/Login">Cerrar Sesión</a>
             </div>
         </div>
-        <img alt="Vue logo" class="logo" src="../assets/logo.png">
     </div>
 </template>
 

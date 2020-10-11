@@ -4,15 +4,19 @@ import App from './App.vue'
 import VueRouter from 'vue-router'; //Importamos librería para rutas
 import Login from './components/Login.vue'; //importamos nuestros componentes Login y Home
 import Home from './components/Home.vue';
+import Widget from './components/Widget.vue';
+import ErrorComponent from './components/ErrorComponent.vue';
 
 Vue.config.productionTip = false
 
 Vue.use(VueRouter); //Decimos a vue que vamos a utilizar el vuerouter instalado
 
 const routes = [  //Definimos los path y donde nos llevará cada uno
-  { path: '/login', component: Login },
+  { path: '/login/:id?', name: 'login', component: Login },  //parámetro opcional (?), para que sea obligatorio se debe quitar el simbolo de pregunta
   { path: '/home', component: Home },
-  { path: '/', component: Home }
+  { path: '/', component: Home }, 
+  { path: '/widget/:id?', name: 'widget', component: Widget}, 
+  { path: '*', component: ErrorComponent }  //aquí entra con cualquier ruta no establecida
 ]
 
 //Creamos el objeto vuerouter

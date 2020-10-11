@@ -7,7 +7,7 @@
       <div class="container">
 
         <label for="uname"><b>Usuario</b></label>
-        <input type="text" :placeholder="username" name="uname" required>
+        <input type="text" :placeholder="username" name="uname" required> <!-- asi se imprimie una variable dentro de atributos html -->
 
         <label for="psw"><b>Contraseña</b></label>
         <input type="text" :placeholder="pass" name="psw" required>
@@ -23,8 +23,8 @@
 <script>
 export default {
   name: 'Login',
-  data() {  //Este método contiene la información que se quiere mostrar
-      return {
+  data() {  
+      return { //Este método retorna la información que se quiere mostrar
           username: 'Ingrese su usuario',
           pass: 'Ingrese su contraseña'
       }

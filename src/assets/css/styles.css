@@ -31,7 +31,10 @@ form {border: 3px solid #f1f1f1;}
   background-color: #ddd;
   color: black;
 }
-
+.active {
+  color: green;
+  background-color: #70BF73;
+}
 .topnav a.active {
   background-color: #4CAF50;
   color: white;

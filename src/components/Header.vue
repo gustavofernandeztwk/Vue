@@ -6,7 +6,7 @@
             </div>
             <div>
                 <router-link :to="{name: 'widget', params: {id: 'Test'}}">Pestaña</router-link> <!-- envío de parámetro por url -->
-                <a href="/Login">Cerrar Sesión</a>
+                <a href="/Login">Cerrar Sesión</a> <!-- navegación entre pantallas sin router link (se recarga la página) -->
             </div>
         </div>
     </div>

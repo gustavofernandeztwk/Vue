@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-      <router-view></router-view> <!-- Carga el componente segun la url a la que se ingrese -->
-    <Footer></Footer>
+      <router-view></router-view> <!-- Carga el componente de manera dinámica segun la url a la que se ingrese -->
+    <Footer></Footer> <!-- componente estático para todas las pantallas --> 
   </div>
 </template>
 
